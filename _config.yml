@@ -3,10 +3,10 @@
 # Site wide configuration
 ####################################
 #
-title: Jimmy Li
-email: jimmyli2002@gmail.com
+title: Gabriel Fok
+email: gabrielfok128@gmail.com
 description: My personal blog
-url: "https://blog.jimmyli.us"
+url: "https://gabrielfok.us"
 keywords: ["blog", "jekyll"]
 
 #
@@ -33,25 +33,25 @@ kramdown:
 ####################################
 #
 owner:
-  name: Jimmy Li
+  name: Gabriel Fok
   avatar: pattern-profile.jpg
   job: ""
-  bio: "Web Developer, CTFs with redpwn and dicegang"
-  email: jimmyli2002@gmail.com
+  bio: "CyberPatriot, CCDC, and Computers"
+  email: gabrielfok128@gmail.com
   disqus-shortname:
-  twitter: jimfutsu
+  twitter: 
   facebook: #username
   google:
     plus: #username
-    analytics: UA-154870924-1
+    analytics: 
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: jimmyl02
+  github: dbaseqp
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: gabriel-fok-653aba174
   skype: #username
   xing: #username
   instagram: #username
