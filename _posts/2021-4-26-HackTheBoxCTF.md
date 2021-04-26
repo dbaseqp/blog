@@ -1,4 +1,5 @@
-﻿layout: post
+﻿---
+layout: post
 title: HackTheBox CTF 2021
 excerpt: "My team and I competed in HackTheBox's CTF Cyber Apocolypse and we got 189th place out of 4740 teams (top 3.99%). I focused mainly on crypto and helped my team occasionally in other categories."
 categories: [competition]
