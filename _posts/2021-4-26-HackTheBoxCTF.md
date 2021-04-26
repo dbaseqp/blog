@@ -9,7 +9,7 @@ tags: [hackthebox, ctf, review]
 ## Overview
 
 1. [Thoughts and Review](#thoughts-and-review)
-2. [Crypto Challenges](#cypto-challenges)
+2. [Crypto Challenges](#crypto-challenges)
 3. [Other Challenges](#other-challenges)
 
 ## Thoughts and Review
