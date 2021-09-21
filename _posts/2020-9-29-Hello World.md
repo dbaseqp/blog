@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Hello World - baseq
-excerpt: "An overview of my journey into cybersecurity, aka baseq."
+title: My Journey into Cybersecurity - A brief history of baseq
+excerpt: "An overview of my journey into cybersecurity."
 categories: [personal]
 tags: [life]
 ---
-tldr; The pathway I took to get into cybersecurity. 
+tldr; The pathway I took to get into cybersecurity. I started in high school and get really involved. *Engage, Google, break things.*
 ### The Beginning
 Ever since I was young, I've loved computers and technology. What initially hooked me onto technology was old generation gaming devices like the SNES, Nintendo 64, and GameBoy. Throughout my childhood, I played countless hours of assorted video games and developed a passion for games that united people across great distances and created a sense of community. Throughout middle school, I thought that I wanted to become a game developer to partake in that connecting of people.
 
@@ -15,7 +15,7 @@ When I entered high school, that dream quickly was replaced. I was introduced to
 ### My Progress
 In order to pursue my cybersecurity passions, I chose to attend California Polytechnic University, Pomona. I joined the SWIFT (Students With an Interest in the Future of Technology), CPTC (Collegiete Penetration Testing Competition), and the CCDC (Collegiete Cyber Defense Competition) team to further my education in cybersecurity. I still enjoy video games (eSports, too), and still am passionate about conneceting people. Now, my goal is to help people stay safe and connected as modern technology evolves.
 
-For those who are looking for a way into cybersecurity but have no clue where to start, I was there, too. By far, the best piece advice I can give is to just start. That's why my motto is "engage, Google, break things." You shouldn't expect to learn everything before you start looking for opportunities. A lot of my process was being proactive and learning on the go as I tried to meet expectations.
+For those who are looking for a way into cybersecurity but have no clue where to start, I was there, too. By far, the best piece advice I can give is to just start. That's why my motto is "*engage, Google, break things.*" You shouldn't expect to learn everything before you start looking for opportunities. A lot of my process was being proactive and learning on the go as I tried to meet expectations.
 
 ### Who is baseq?
 People who see my online alias, baseq, almost always ask the same question: is it 'basic' or 'base Q'? Well, the creation of my username dates back to one of my CyberPatriot national finals trips in Baltimore, Maryland. During my team's preparation, I would often say "remember the basic things," referring to low hanging fruit to secure our competition environment. As the trip continued, I started purposefully spelling the word 'basic' in more convuluted ways as a joke. Eventually, I came across the spelling I use today 'baseq.' To answer the question on how to pronounce 'baseq': it's entirely silent ;)
