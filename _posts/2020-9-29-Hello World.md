@@ -5,7 +5,7 @@ excerpt: "An overview of my journey into cybersecurity."
 categories: [personal]
 tags: [life]
 ---
-tldr; The pathway I took to get into cybersecurity. I started in high school and get really involved. *Engage, Google, break things.*
+tldr; The pathway I took to get into cybersecurity. I started in high school and got really involved. *Engage, Google, break things.*
 ### The Beginning
 Ever since I was young, I've loved computers and technology. What initially hooked me onto technology was old generation gaming devices like the SNES, Nintendo 64, and GameBoy. Throughout my childhood, I played countless hours of assorted video games and developed a passion for games that united people across great distances and created a sense of community. Throughout middle school, I thought that I wanted to become a game developer to partake in that connecting of people.
 
