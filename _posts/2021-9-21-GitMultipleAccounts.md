@@ -67,7 +67,7 @@ $ eval "$(ssh-agent -s)"                # starts ssh-agent service
 $ ssh-add ~/.ssh/personal_private_key   # adds personal private key
 $ ssh-add ~/.ssh/school_private_key     # adds school private key
 ```
-##### Note: These commands are run in Git BASH
+##### Note: The above commands are run in Git BASH
 
 Fifth, try testing the connection for your SSH keys.
 ```
@@ -91,7 +91,7 @@ git remote set-url origin git@github.com:dbaseqp/blog.git
 git remote set-url origin git@github-school:dbaseqp/blog.git
 ```
 
-### Per-Remote Accounts
+### Personal Access Tokens
 When you create a remote (e.g. origin), you can associate the remote with your Personal Authentication Token. This technique basically is going to associate a certain remote repository with one of your accounts. 
 
 GitHub's Personal Authentication Token can be found in your user account's settings, near the bottom under "Developer settings." Then go to "Personal access tokens" and generate a new token if you need to. From there you can select the permissions you would like to grant that token. By default, I would say selecting "repo" is usually good enough. Click the generate button to create the token.
