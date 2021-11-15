@@ -65,7 +65,7 @@ data:
             <br>
         - title: Collegiete Penetration Testing Competition
           excerpt: >
-            TBA
+            1st Place | WRCPTC Regionals | 2021
         - title: CyberPatriot
           excerpt: >
             <br>
