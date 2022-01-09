@@ -65,7 +65,8 @@ data:
             <br>
         - title: Collegiete Penetration Testing Competition
           excerpt: >
-            1st Place | WRCPTC Regionals | 2021
+            1st Place | WRCPTC Regionals  | 2021
+            1st Place | CPTC World Finals | 2022
         - title: CyberPatriot
           excerpt: >
             <br>
