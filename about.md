@@ -57,7 +57,7 @@ data:
       excerpt: >
         CompTIA A+
         <br>
-    - title: My Competition Achievements <i class="fas fa-trophy"></i>
+    - title: Achievements <i class="fas fa-trophy"></i>
       children:
         - title: Collegiete Cybersecurity Defense Competition
           excerpt: >
@@ -66,6 +66,7 @@ data:
         - title: Collegiete Penetration Testing Competition
           excerpt: >
             1st Place | WRCPTC Regionals  | 2021
+            <br>
             1st Place | CPTC World Finals | 2022
         - title: CyberPatriot
           excerpt: >
