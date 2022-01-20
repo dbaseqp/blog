@@ -58,6 +58,7 @@ data:
         CompTIA A+
         <br>
 ---
+[//]: # About Me
 ## <center> Achievements <i class="fas fa-trophy"></i> </center>
 <style>
   .swiper-demo {
