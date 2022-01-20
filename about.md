@@ -62,7 +62,8 @@ data:
 ## <center> Achievements <i class="fas fa-trophy"></i> </center>
 <style>
   .swiper-demo {
-    height: 220px;
+    min-height: 220px;
+    height: auto;
   }
   .swiper-demo .swiper__slide {
     display: flex;
