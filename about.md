@@ -69,7 +69,8 @@ data:
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: min(3rem, 3vw);
+    min-height: 220px;
     color: #fff;
   }
   .swiper-demo .swiper__slide:nth-child(even) {
