@@ -57,21 +57,54 @@ data:
       excerpt: >
         CompTIA A+
         <br>
-    - title: Achievements <i class="fas fa-trophy"></i>
-      children:
-        - title: Collegiete Cybersecurity Defense Competition
-          excerpt: >
-            9th Place | WRCCDC Qualifiers | 2020
-            <br>
-        - title: Collegiete Penetration Testing Competition
-          excerpt: >
-            1st Place | WRCPTC Regionals  | 2021
-            <br>
-            1st Place | CPTC World Finals | 2022
-        - title: CyberPatriot
-          excerpt: >
-            <br>
-            4th Place | CyberPatriot Nationals | 2020
-            <br>
-            6th Place | CyberPatriot Nationals | 2019
 ---
+# <center> Achievements <i class="fas fa-trophy"></i> </center>
+<style>
+  .swiper-demo {
+    height: 220px;
+  }
+  .swiper-demo .swiper__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+  }
+  .swiper-demo .swiper__slide:nth-child(even) {
+    background-color: #ff69b4;
+  }
+  .swiper-demo .swiper__slide:nth-child(odd) {
+    background-color: #2593fc;
+  }
+  .swiper-demo--dark .swiper__slide:nth-child(even) {
+    background-color: #F36170;
+  }
+  .swiper-demo--dark .swiper__slide:nth-child(odd) {
+    background-color: #3267b6;
+  }
+  .swiper-demo--image .swiper__slide:nth-child(n) {
+    background-color: #000;
+  }
+</style>
+
+<div class="swiper my-3 swiper-demo swiper-demo--dark swiper-achievements">
+  <div class="swiper__wrapper">
+    <div class="swiper__slide">1st Place | CPTC World Finals | 2021-2022</div>
+    <div class="swiper__slide">1st Place | CPTC Western Regionals  | 2021-2022</div>
+    <div class="swiper__slide">4th Place | CyberPatriot Nationals | 2019-2020</div>
+    <div class="swiper__slide">6th Place | CyberPatriot Nationals | 2018-2019</div>
+    <div class="swiper__slide">9th Place | WRCCDC Qualifiers | 2020-2021</div>
+  </div>
+  <!-- <div class="swiper__pagination"></div> -->
+  <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
+  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+
+<script>
+  {%- include scripts/lib/swiper.js -%}
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $('.swiper-achievements').swiper();
+  });
+</script>
