@@ -26,7 +26,7 @@ The SSH key will be generated in the .ssh directory inside your user's home dire
 
 Second, go to GitHub and go to your account settings and go to "SSH and GPG keys". Click "New SSH key" and then copy-paste the content of the .pub file into the bottom field. Name your key in the top field, then click "Add SSH key".
 
-Third, go to your user's ".ssh" directory from earlier, create/edit a file called "config", and put the following contents inside:
+Third, create/edit the file `~/.ssh/config`, and put the following contents inside:
 ```
 # Default github account: personal
 Host github.com
