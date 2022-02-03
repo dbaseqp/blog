@@ -119,4 +119,4 @@ My teammates spent a ton of time and effort to win this year. Check out the webs
 - Robinson: [https://rsecke.com/](https://rsecke.com/){:.button.button--primary.button--rounded.button--sm}
 - Dylan: [https://dtsec.us/](https://dtsec.us/){:.button.button--primary.button--rounded.button--sm}
 - Taylor: [https://tsnguyen.com/](https://tsnguyen.com/){:.button.button--primary.button--rounded.button--sm}
-- Jacob: [https://jacobjayme.xyz/](https://jacobjayme.xyz/){:.button.button--primary.button--rounded.button--sm}
+- Jacob: [https://jacobjayme.xyz/](https://www.jacobjayme.xyz/){:.button.button--primary.button--rounded.button--sm}
