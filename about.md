@@ -55,10 +55,23 @@ data:
           url: https://github.com/dbaseqp/dotfiles
     - title: My Certifications <i class="fas fa-graduation-cap"></i>
       excerpt: >
-        CompTIA A+
-        <br>
         Associate of ISC<sup>2</sup>
         <br>
+        CompTIA A+
+        <br>
+      children:
+        - title: 
+          image: 
+            src: assets/images/associate-of-isc.png
+            is_row: true
+            full_width: true
+            style: "max-width: 165px;"
+        - title:
+          image: 
+            src: assets/images/comptia-a+.png
+            is_row: true
+            full_width: true
+            style: "max-width: 165px;"
 ---
 [//]: # About Me
 ## <center> Achievements <i class="fas fa-trophy"></i> </center>
