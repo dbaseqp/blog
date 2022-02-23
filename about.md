@@ -49,13 +49,15 @@ data:
         Current director of SWIFT Academy.
         <br>
         <br>
-        Currently a Computer Science Undergraduate at Cal Poly Pomona. <i class="fas fa-horse-head"></i>
+        Currently a Computer Science Undergraduate Student at Cal Poly Pomona. <i class="fas fa-horse-head"></i>
       actions:
         - text: Dotfiles
           url: https://github.com/dbaseqp/dotfiles
     - title: My Certifications <i class="fas fa-graduation-cap"></i>
       excerpt: >
         CompTIA A+
+        <br>
+        Associate of ISC<sup>2</sup>
         <br>
 ---
 [//]: # About Me
