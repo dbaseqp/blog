@@ -124,8 +124,8 @@ data:
   <div class="swiper__wrapper">
     <div class="swiper__slide">1st Place | CPTC World Finals | 2021-2022<br>
     1st Place | CPTC Western Regionals  | 2021-2022</div>
-    <div class="swiper__slide">9th Place | CCDC Western Qualifiers | 2020-2021<br>
-    7th Place | CCDC Western Qualifiers | 2021-2022
+    <div class="swiper__slide">7th Place | CCDC Western Qualifiers | 2021-2022<br>
+    9th Place | CCDC Western Qualifiers | 2020-2021
     </div>
     <div class="swiper__slide">4th Place | CyberPatriot Nationals | 2019-2020<br>
     6th Place | CyberPatriot Nationals | 2018-2019</div>
