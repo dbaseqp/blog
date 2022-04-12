@@ -15,6 +15,8 @@ If you're a developer who holds many titles in different organizations, you've p
 ## Overview
 Essentially, there are 2 correct ways of setting up multiple GitHub accounts: SSH keys and per-remote accounts via Personal Access Tokens. In my experience, using Personal Access Tokens is easier to set up, but that may not be suitable for every situation.
 
+**Update:** I have swapped sides - SSH keys are way easier for me to set up now that I am used to it. It's my go-to choice!
+
 ## SSH Keys with GitHub
 First, generate an SSH key for if you don't have one already.
 ```
