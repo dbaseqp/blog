@@ -1,21 +1,36 @@
 ---
-layout: landing
-title: Gabriel Fok
-excerpt: >
-  Fluid. Curious. Kaizen.
+layout: home_landing
+title: Home
+excerpt: "An enjoyer of all things computer science, cybersecurity, and technology."
 permalink: /index.html
+logo: /assets/images/baseq_icon.png
 article_header:
-  actions:
-    - text: See My Blog
-      type: error
-      url: /blog/
-    - text: About Me
-      type: outline-theme-dark
-      url: about.html
-  height: 100vh
   theme: dark
-  background_color: "#367a9a"
   background_image:
-    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
-    src: "/assets/images/background.png"
+    gradient: "linear-gradient(to right, rgba(29, 44, 90, .9), rgba(29, 44, 90, .9))"
+    
+data:
+  sections:
+    - overlap: true
+      full-width: true
+      children:
+        - title: About Me
+          excerpt: baseq
+          url: "about"
+          background_image:
+            gradient: "linear-gradient(to right, rgba(107, 135, 255, 0.6), rgba(200, 61, 251, .6))"
+            src: "/assets/images/home/about.jpg"
+        - title: SWIFT
+          excerpt: My organization
+          url: "https://calpolyswift.org"
+          background_image:
+            gradient: "linear-gradient(to right, rgba(255, 171, 64, 0.6), rgba(255, 171, 64, .6))"
+            src: "/assets/images/home/swift.jpg"
+        - title: My Blog
+          excerpt: Stories, walk-throughs, opinions, thoughts, and experiences.
+          url: "blog"
+          background_image:
+            gradient: "linear-gradient(to right, rgba(255, 123, 172, 0.6), rgba(107, 135, 255, .6))"
+            src: "/assets/images/home/blog.jpg"
+     
 ---

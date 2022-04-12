@@ -59,7 +59,7 @@
 @mixin make-spacings() {
   $propertys: ("m", "p");
   $sides: ("t", "b", "l", "r", "x", "y", "");
-  $spacers: (0, 1, 2, 3, 4, 5);
+  $spacers: (0, 1, 2, 3, 4, 5, 6);
 
   @each $property in $propertys {
     @each $side in $sides {

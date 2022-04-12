@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: page
 titles:
   # @start locale config
   en      : &EN       About Me
@@ -26,120 +26,90 @@ titles:
 key: page-about
 #full_width: false
 header: true
-
-article_header:
-  height: 100vh
-  theme: dark
-  background_color: "#367a9a"
-  background_image:
-    gradient: "linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .6))"
-    src: /assets/images/logo/logo.png
-data:
-  sections:
-    - title: Gabriel Fok <i class="fas fa-shield-alt"></i>
-      excerpt: >
-        Also known as baseq.
-        <br>
-        I'm a security enthusiest, avid esports fan, and learner of just about anything I find interesting.
-        <br>
-        I represent my university at security competitions as the CCDC Linux Security lead and a member of the CPTC team. 
-        <br>
-        I like learning to spread my knowledge and experience.
-        <br>
-        Current director of SWIFT Academy.
-        <br>
-        <br>
-        Currently a Computer Science Undergraduate Student at Cal Poly Pomona. <i class="fas fa-horse-head"></i>
-      actions:
-        - text: Dotfiles
-          url: https://github.com/dbaseqp/dotfiles
-    - title: My Certifications <i class="fas fa-graduation-cap"></i>
-      excerpt: >
-        Associate of ISC<sup>2</sup>
-        <br>
-        CompTIA A+
-        <br>
-      children:
-        - title: 
-          image: 
-            src: assets/images/associate-of-isc.png
-            is_row: true
-            full_width: true
-            style: "max-width: 165px;"
-        - title:
-          image: 
-            src: assets/images/comptia-a+.png
-            is_row: true
-            full_width: true
-            style: "max-width: 165px;"
+certifications:
+  - name: Associate of (ISC)<sup>2</sup>
+  - name: CompTIA A+
+competitions:
+  - award: 1st Place
+    name: CPTC World Finals
+    year: 2021-2022
+  - award: 1st Place
+    name: CPTC Western Regionals
+    year: 2021-2022
+  - award: 7th Place 
+    name: CCDC Western Qualifiers 
+    year: 2021-2022
+  - award: 9th Place
+    name: CCDC Western Qualifiers
+    year: 2020-2021
+  - award: 4th Place
+    name: CyberPatriot Nationals 
+    year: 2019-2020
+  - award: 6th Place
+    name: CyberPatriot Nationals 
+    year: 2018-2019
 ---
-[//]: # About Me
-## <center> Achievements <i class="fas fa-trophy"></i> </center>
-<style>
-  .swiper-demo {
-    min-height: 220px;
-    height: auto;
-  }
-  .swiper-demo .swiper__slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: min(3rem, 3vw);
-    min-height: 220px;
-    color: #fff;
-  }
-  .swiper-demo .swiper__slide:nth-child(even) {
-    background-color: #ff69b4;
-  }
-  .swiper-demo .swiper__slide:nth-child(odd) {
-    background-color: #2593fc;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(even) {
-    background-color: #C34160;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(odd) {
-    background-color: #3267b6;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(1) {
-    background-image: url("assets/images/logos/CPTCLogo_FullColorWithText_medium.png");
-    background-size: 396px 230px;
-    background-repeat: no-repeat;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(2) {
-    background-image: url("assets/images/logos/CCDCLogo_FullColorWithText.png");
-    background-size: 450px 216px;
-    background-repeat: no-repeat;
-  }
-  .swiper-demo--dark .swiper__slide:nth-child(3) {
-    background-image: url("assets/images/logos/CyberPatriotLogo_FullColor.png");
-    background-size: 210px 200px;
-    background-repeat: no-repeat;
-  }
-  .swiper-demo--image .swiper__slide:nth-child(n) {
-    background-color: #000;
-  }
-</style>
-
-<div class="swiper my-3 swiper-demo swiper-demo--dark swiper-achievements">
-  <div class="swiper__wrapper">
-    <div class="swiper__slide">1st Place | CPTC World Finals | 2021-2022<br>
-    1st Place | CPTC Western Regionals  | 2021-2022</div>
-    <div class="swiper__slide">7th Place | CCDC Western Qualifiers | 2021-2022<br>
-    9th Place | CCDC Western Qualifiers | 2020-2021
-    </div>
-    <div class="swiper__slide">4th Place | CyberPatriot Nationals | 2019-2020<br>
-    6th Place | CyberPatriot Nationals | 2018-2019</div>
+<div id=about>
+  <div>
+      <p>Also known as baseq.</p>
   </div>
-  <!-- <div class="swiper__pagination"></div> -->
-  <div class="swiper__button swiper__button--prev fas fa-chevron-left"></div>
-  <div class="swiper__button swiper__button--next fas fa-chevron-right"></div>
-  <!-- <div class="swiper-scrollbar"></div> -->
-</div>
 
-<script>
-  {%- include scripts/lib/swiper.js -%}
-  var SOURCES = window.TEXT_VARIABLES.sources;
-  window.Lazyload.js(SOURCES.jquery, function() {
-    $('.swiper-achievements').swiper();
-  });
-</script>
+  <div>
+    <h3 ><i>Computer Science Undergraduate Student at Cal Poly Pomona. </i></h3>
+  </div>
+
+  <div>
+    <p>
+      I'm a person with many interests&#8212;security, esports, and music to name a few. This blog exists as a way for me to share
+      my passions with others.
+    </p>
+
+    <p>
+      I represent my university at security competitions as the captain of the CCDC team and co-captain of the CPTC
+      team. I serve as the vice president of operations at
+      <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>
+      where I try to spread my knowledge and experience.
+    </p>
+  </div>
+
+  <div>
+    <div>
+      <h2>Certifications</h2>
+    </div>
+    <div class="certifications">
+    <ul>
+      {%- for _certification in page.certifications -%}
+        <li>
+        <div class="cert">
+          <p>{{ _certification.name }}</p>
+          {%- if _certification.src -%}
+          <img class="image image--md" src="{{ _certification.src }}">
+          {%- endif -%}
+        </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+  
+  <div>
+    <div>
+      <h2>Competitive Achievements</h2>
+    </div>
+    <div class="competitions">
+      <table >
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        {%- for _competition in page.competitions -%}
+        <tr>
+          <td><b>{{ _competition.award }}</b></td>
+          <td>{{ _competition.name }}</td>
+          <td>{{ _competition.year}}</td>
+        </tr>
+        {%- endfor -%}
+      </table>    
+    </div>
+  </div>
+</div>

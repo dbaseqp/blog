@@ -1,3 +1,29 @@
 /* start custom scss snippet */
 
+.header__title {
+    img {
+        transition: transform .7s ease-in-out;
+    }
+    
+    img:hover {
+        transform: rotate(720deg);
+    }
+}
+
+#about {
+    .competitions {
+        table {
+            min-width: 500px;
+            max-width: 100%;
+            border-collapse: collapse;
+        }
+        overflow-x:auto;
+        tr:nth-child(even) {
+            background-color: #2e2e2e;
+        }
+    }
+    li {
+        margin-left: 2rem;
+    }
+}
 /* end custom scss snippet */
