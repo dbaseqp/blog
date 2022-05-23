@@ -144,7 +144,7 @@
 }
 
 .hero__content__home {
-  margin: map-get($spacers, 6);
+  margin: map-get($spacers, 5) map-get($spacers, 6);
 
   @include media-breakpoint-down(lg) {
     margin: map-get($spacers, 5) map-get($spacers, 4);

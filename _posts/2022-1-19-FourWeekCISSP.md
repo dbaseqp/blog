@@ -8,10 +8,10 @@ aside:
   toc: true
 ---
 # Overview
-The CISSP certification is an industry standard that is very popular in system administration roles, especially for jobs in the public sector. The exam is a multiple-choice, adaptive exam used to determine if one is qualified to possess the title of CISSP. In addition to passing the test, one must also have at least 5 years of related experience to be a CISSP. 
+The CISSP certification is an industry standard that is very popular in system administration roles, especially for jobs in the public sector. The exam is a multiple-choice, adaptive exam used to determine if one is qualified to possess the title of CISSP. In addition to passing the test, one must also have at least 5 years of related experience to be a CISSP. [Since I don't have the full five years of experience](https://community.isc2.org/t5/Member-Support/CISSP-Passed/td-p/28233#:~:text=Please%20feel%20free%20to%20shout,does%20take%205%2D6%20weeks), I am an Associate of ISC<sup>2</sup>.
 
 As a sophomore at CPP, I took the exam in January of 2022 and passed while only studying for four weeks. In fact, I passed in the minimum 100 questions. It took an insane amount of discipline, hard work, and dedication. Since I was using my winter break as a time to devote myself to studying, I had to miss out on a lot of events with family and friends. My aggressive way of preparation is not meant for everyone. This challenge for myself was a great experience in exploring what I can do when I put my all in something and I am proud of my performance.
-> Disclaimer: I do not encourage preparing for CISSP in just 4 weeks. The CISSP exam is a very difficult exam, especially for those with less experience in security and test taking.
+> Disclaimer: I do not encourage preparing for CISSP in just 4 weeks. The CISSP exam is a very difficult exam for those without experience, especially for those with less experience in security and test taking.
 
 ### How many questions are in the CISSP?
 There are a minimum of 100 questions you must answer to pass. If you do poorly enough, you may not need to answer all 100. If you have not performed well enough, the test more go longer than 100 questions until the test can determine if you are doing well enough to pass, or poor enough to fail. While you only know if you pass or fail, passing in 100 questions is considered a very good performance.
