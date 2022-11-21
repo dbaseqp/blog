@@ -31,16 +31,31 @@ certifications:
   - name: CompTIA A+
 competitions:
   - award: 1st Place
+    name: CPTC Western Regionals
+    year: 2022-2023
+  - award: 7th Place 
+    name: Hivestorm 
+    year: 2022-2023
+  - award: 1st Place
     name: CPTC World Finals
     year: 2021-2022
   - award: 1st Place
     name: CPTC Western Regionals
     year: 2021-2022
+  - award: 8th Place 
+    name: CCDC Western Regionals 
+    year: 2021-2022
   - award: 7th Place 
     name: CCDC Western Qualifiers 
     year: 2021-2022
+  - award: 9th Place 
+    name: Hivestorm 
+    year: 2020-2021
   - award: 9th Place
     name: CCDC Western Qualifiers
+    year: 2020-2021
+  - award: 6th Place 
+    name: Hivestorm 
     year: 2020-2021
   - award: 4th Place
     name: CyberPatriot Nationals 
@@ -68,7 +83,7 @@ competitions:
       I represent my university at security competitions as the captain of the CCDC team and co-captain of the CPTC
       team. I serve as the vice president of operations at
       <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>
-      where I try to spread my knowledge and experience.
+      where I try to spread my knowledge and experience to the community.
     </p>
   </div>
 
