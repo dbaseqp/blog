@@ -119,4 +119,4 @@ Now you should be able to restart Apache2 and view your site!
 $ sudo systemctl restart apache2
 ```
 
-![Image](/assets/images/flask-example.png)
+![Image](/assets/images/flask_example.png)
