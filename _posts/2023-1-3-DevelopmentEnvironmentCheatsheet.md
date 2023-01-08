@@ -23,7 +23,18 @@ curl -L https://git.io/vQhTU | bash
 
 # Set Static IP
 
-## Debian-based
+## Debian 10+
+Edit `/etc/networks/interfaces`:
+```
+auto ens192
+iface ens192 inet static
+ address 192.168.1.200
+ netmask 255.255.255.0
+ gateway 192.168.1.1
+ dns-nameservers 8.8.8.8
+```
+
+## Ubuntu
 Edit `/etc/netplan/<config file>.yaml`:
 ```
 network:
@@ -31,7 +42,7 @@ network:
     ens160:
       dhcp4: no
       addresses:
-        - 192.168.1.101/24
+        - 192.168.1.200/24
       gateway4: 192.168.1.1
       nameservers:
         addresses: [8.8.8.8]
