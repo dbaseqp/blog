@@ -22,6 +22,7 @@ curl -L https://git.io/vQhTU | bash
 ```
 
 # Set Static IP
+After configuring static IP, make sure to restart networking service or interface.
 
 ## Debian 10+
 Edit `/etc/networks/interfaces`:
@@ -50,7 +51,7 @@ network:
 ```
 
 ## RHEL-based
-Edit `/etc/sysconfig/network-scripts/ifcfg-ens192`:
+Edit `/etc/sysconfig/network-scripts/ifcfg-ens192` and add:
 ```
 BOOTPROTO=none
 ONBOOT=yes
