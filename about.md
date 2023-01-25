@@ -31,13 +31,19 @@ certifications:
   - name: CompTIA A+
 competitions:
   - award: 1st Place
+    name: CPTC Global Finals
+    year: 2022-2023
+  - award: 2nd Place
+    name: CCDC Western Regional Invitational
+    year: 2022-2023
+  - award: 1st Place
     name: CPTC Western Regionals
     year: 2022-2023
   - award: 7th Place 
     name: Hivestorm 
     year: 2022-2023
   - award: 1st Place
-    name: CPTC World Finals
+    name: CPTC Global Finals
     year: 2021-2022
   - award: 1st Place
     name: CPTC Western Regionals
