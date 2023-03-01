@@ -36,9 +36,6 @@ competitions:
   - award: 1st Place
     name: CPTC World Finals
     year: 2022-2023
-  - award: 2nd Place
-    name: CCDC Western Invitationals
-    year: 2022-2023
   - award: 1st Place
     name: CPTC Global Finals
     year: 2022-2023
