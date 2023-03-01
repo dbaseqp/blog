@@ -30,6 +30,15 @@ certifications:
   - name: Associate of (ISC)<sup>2</sup>
   - name: CompTIA A+
 competitions:
+  - award: 4th Place
+    name: CCDC Western Qualifiers
+    year: 2022-2023
+  - award: 1st Place
+    name: CPTC World Finals
+    year: 2022-2023
+  - award: 2nd Place
+    name: CCDC Western Invitationals
+    year: 2022-2023
   - award: 1st Place
     name: CPTC Western Regionals
     year: 2022-2023
@@ -75,12 +84,11 @@ competitions:
 
   <div>
     <p>
-      I'm a person with many interests&#8212;security, esports, and music to name a few. This blog exists as a way for me to share
-      my passions with others.
+      I'm a person with many interests&#8212;security, esports, and music to name a few. 
     </p>
 
     <p>
-      I represent my university at security competitions as the captain of the CCDC team and co-captain of the CPTC
+      Code monkey and *nix nerd for various security competitions I've won. Currently captain of the CCDC team and former co-captain of the CPTC
       team. I serve as the vice president of operations at
       <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>
       where I try to spread my knowledge and experience to the community.
