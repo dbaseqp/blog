@@ -76,10 +76,30 @@ ul.toc {
 }
 
 ul.toc--ellipsis {
-  & > li {
-    @include overflow(hidden);
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  // & > li {
+  //   @include overflow(hidden);
+  //   text-overflow: ellipsis;
+  //   white-space: nowrap;
+  // }
+  overflow-y: auto;
+  max-height: 90vh;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
 }
 

@@ -1,3 +1,67 @@
 /* start custom scss snippet */
+.header__title {
+    svg {
+        height: 50px;
+        width: auto;
+        transition: transform 1s ease-in-out;
+    }
+    
+    svg:hover {
+        transform: rotate(720deg);
+    }
 
+    .home--button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            padding: 0 8px;
+        }
+    }
+}
+
+#landing {
+    .overlay__excerpt--home {
+        border-top: solid;
+        padding-top: 1rem;
+        font-size: map-get($base, font-size-h3-xl);
+      
+        @include media-breakpoint-down(lg) {
+          font-size: map-get($base, font-size-h3);
+        }
+      
+        @include media-breakpoint-down(md) {
+          font-size: map-get($base, font-size-h3-xs);
+        }
+      
+        font-weight: map-get($base, font-weight-bold);
+      }
+
+      .hero__content__home {
+        transition: all .7s ease-in-out;
+        margin: 8rem;
+        @include media-breakpoint-down(lg) {
+            margin: 2rem;
+        }
+      }
+}
+
+#about {
+    .competitions {
+        tbody > tr:nth-child(odd) {
+            background-color: #23262A;
+        }
+        thead {
+            border-bottom: solid 2px rgba(210, 215, 217, 0.75);
+        }
+        tr {
+            text-align: left;
+        }
+        * {
+            border: none;
+        }
+        width: 100%;
+        display: table;
+    }
+}
 /* end custom scss snippet */
