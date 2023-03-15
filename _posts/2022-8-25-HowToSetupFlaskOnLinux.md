@@ -61,10 +61,10 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/flask_apps/")
 
 from flaskexample import app as application 
+application.secret_key = 'Add your secret key'
 ```
 
 > "app" is the name of the Flask application in my \_\_init__.py
-application.secret_key = 'Add your secret key'
 
 # 3. Configure Virtual Host for Apache2
 
