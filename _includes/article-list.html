@@ -55,7 +55,13 @@
           </div>
         {%- endif -%}
         <div class="item__content">
-          <header><a href="{{ _article_url }}"><h2 itemprop="headline" class="item__header">{{ _article.title }}</h2></a></header>
+          <header>
+            <a href="{{ _article_url }}">
+              <h2>
+                <span itemprop="headline" class="item__header link link-underline link-underline-black">{{ _article.title }}</span>
+              </h2>
+            </a>
+          </header>
           <div class="item__description">
             {%- if _article.excerpt and include.show_excerpt -%}
               <div class="article__content" itemprop="description articleBody">

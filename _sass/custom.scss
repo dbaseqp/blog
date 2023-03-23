@@ -5,7 +5,7 @@
         width: auto;
         transition: transform 1s ease-in-out;
     }
-    
+
     svg:hover {
         transform: rotate(720deg);
     }
@@ -25,31 +25,31 @@
         border-top: solid;
         padding-top: 1rem;
         font-size: map-get($base, font-size-h3-xl);
-      
-        @include media-breakpoint-down(lg) {
-          font-size: map-get($base, font-size-h3);
-        }
-      
-        @include media-breakpoint-down(md) {
-          font-size: map-get($base, font-size-h3-xs);
-        }
-      
-        font-weight: map-get($base, font-weight-bold);
-      }
 
-      .hero__content__home {
-        transition: all .7s ease-in-out;
+        @include media-breakpoint-down(lg) {
+            font-size: map-get($base, font-size-h3);
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: map-get($base, font-size-h3-xs);
+        }
+
+        font-weight: map-get($base, font-weight-bold);
+    }
+
+    .hero__content__home {
+        transition: all 0.7s ease-in-out;
         margin: 8rem;
         @include media-breakpoint-down(lg) {
             margin: 2rem;
         }
-      }
+    }
 }
 
 #about {
     .competitions {
         tbody > tr:nth-child(odd) {
-            background-color: #23262A;
+            background-color: #23262a;
         }
         thead {
             border-bottom: solid 2px rgba(210, 215, 217, 0.75);
@@ -65,3 +65,34 @@
     }
 }
 /* end custom scss snippet */
+.item__content > header {
+    a:link {
+        text-decoration: none !important;
+    }
+    a:visited {
+        text-decoration: none !important;
+    }
+    a:hover {
+        text-decoration: none !important;
+    }
+    a:active {
+        text-decoration: none !important;
+    }
+}
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient($main-color-1, $main-color-1);
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%;
+}
