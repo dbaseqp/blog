@@ -30,6 +30,12 @@ certifications:
   - name: Associate of (ISC)<sup>2</sup>
   - name: CompTIA A+
 competitions:
+  - award: 2nd Place
+    name: CCDC National Finals
+    year: 2022-2023
+  - award: 3rd Place
+    name: CCDC National Panoply
+    year: 2022-2023
   - award: 1st Place
     name: CCDC National Wildcard
     year: 2022-2023
