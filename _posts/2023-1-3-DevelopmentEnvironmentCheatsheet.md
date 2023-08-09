@@ -23,6 +23,21 @@ Install `curl` and run the following oneliner.
 curl -L https://git.io/vQhTU | bash
 ```
 
+# Configure Copy/Paste for ESXi VMs
+
+1. Shutdown VM
+2. Edit VM settings > VM Options > Advanced > Configuration Parameters > Edit Configuration
+3. Add the following configuration parameters:
+
+| Name | Value |
+| ---- | ----- |
+| isolation.tools.copy.disable | FALSE |
+| isolation.tools.paste.disable | FALSE |
+| isolation.tools.setGUIOptions.enable | TRUE |
+
+4. Click OK
+5. Power on VM
+
 # Set Static IP
 
 After configuring static IP, make sure to restart networking service or interface.

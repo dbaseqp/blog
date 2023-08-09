@@ -2,6 +2,6 @@ header:
   - title:      Blog
     url:        /blog/
   - title:      Archive
-    url:        /archive.html
+    url:        /archive/
   - title:      About
-    url:        /about.html
+    url:        /about/

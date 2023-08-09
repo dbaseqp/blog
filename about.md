@@ -28,7 +28,9 @@ key: page-about
 header: true
 certifications:
   - name: Associate of (ISC)<sup>2</sup>
+    link: https://www.credly.com/badges/8c627b72-4fd4-4e54-8242-f85e18221b51
   - name: CompTIA A+
+    link: https://www.credly.com/badges/4567b856-8184-489c-a64e-00f79a5fa502
 competitions:
   - award: 2nd Place
     name: CCDC National Finals
@@ -93,10 +95,9 @@ competitions:
     </p>
 
     <p>
-      Code monkey and *nix nerd for various security competitions I've participated in. Currently captain of the CCDC team and former co-captain of the CPTC
-      team. I serve as the vice president of operations at
-      <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>
-      where I try to spread my knowledge and experience to the community.
+      Code monkey and *nix nerd for various security competitions I've participated in. Former captain of the CCDC team and former co-captain of the CPTC
+      team. Formally served as the Vice President of Operations at
+      <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>. Just happy to spread my knowledge and experience to the anyone interested.
     </p>
   </div>
 
@@ -109,9 +110,13 @@ competitions:
       {%- for _certification in page.certifications -%}
         <li>
         <div class="cert">
-<p>{{_certification.name }}</p>
+          {%- if _certification.link -%}
+            <a href="{{ _certification.link }}" target="_blank">{{_certification.name}}</a>
+          {%- else -%}
+            <p>{{_certification.name }}</p>
+          {%- endif -%}
           {%- if _certification.src -%}
-<img class="image image--md" src="{{_certification.src }}">
+            <img class="image image--md" src="{{_certification.src }}">
           {%- endif -%}
         </div>
         </li>

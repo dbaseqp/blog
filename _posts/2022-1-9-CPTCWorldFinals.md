@@ -12,7 +12,7 @@ mermaid: true
 # Introduction
 The [Collegiete Penetration Testing Competition (CPTC)](https://cp.tc/) is a cybersecurity competition that, you guessed it, revolves around penetration testing. The main goals of the competition is to provide students an opportunity to experience the real world of professional penetration testing, beyond what is taught in things like the classroom, HackTheBoxes, and CTFs. 
 
-![Image](/assets/images/logos/CPTCLogo_FullColorWithText.png)
+![Image](/assets/images/blog/CPTCLogo.png)
 
 In CPTC, a team of up to 6 students perform a penetration test and security audit on a fictitious organization, then document the findings in a [penetration testing report](https://github.com/nationalcptc/report_examples). Cal Poly Pomona has never won an event in CPTC before.
 
@@ -37,7 +37,7 @@ Before the season even officialy kicks off, CPP needed to build a team. Alex, ou
 
 Once the roster was solidified, the seasons starts with the Request for Proposal (RFP). In this case, it was a document that the fictional business published requesting for penetration testing services. This year, the company was "Le Bonbon Croissant" (LBC), a food manufacturing and distribution company. Out of all the RFPs that were submitted by schools, CPP was selected to compete in the Western Regional. 
 
-![Image](/assets/images/cptc_2021.png)
+![Image](/assets/images/blog/cptc_2021.png)
 
 With teams locked in for the Regional events all over the world, the CPTC organizers begin dropping hints via Open Source Intelligence (OSINT). My team and I originally thought that this year's OSINT portion was very weak. After finding the low hanging fruit — social media accounts, a GitHub repository, and a StackOverflow leak — our team struggled to deduce anything meaningful. The social media accounts had a lot of red herrings that through us off like suggestive passwords ("Steptember1"), and the none of the leaks related to infrastrucure gave us any more insight than an idea of what to expect during the engagement (e.g. Swagger API, OpenCart). Sure, these are still significant findings, however, it is much less than what we were expecting. The overall impression was that we were either missing something huge or this year's organizers really didn't care about OSINT. It turned out to be the former.
 
@@ -53,7 +53,7 @@ The Regionals environment invited the penetration teams to the warehouse network
 
 [Nathan](https://nathaneberhardt.com/), our co-captain, branched a project created by our alum to create a completely new product: [jVision]((https://github.com/neberhardt123/jVision)). It's predecessor, [nVis](https://github.com/Menn1s/nVis), was created by Silas and Dennis during their years on the roster. It was built to centralize nmap scanning and allow for better cooperation and coordination during penetration tests. Nathan's jVision used the concept as a baseline and completely rebuilt it from the ground up and innovated it's front end to provide a better user experience.
 
-![Image](/assets/images/CPTC2021_jvis.png)
+![Image](/assets/images/blog/CPTC2021_jvis.png)
 
 We kicked off Regionals with jVision and quickly got a high-level view of the environment. From there, we split up and started tackling boxes on our own to gather any reconnaissance. After a few hours, we began discovering some critical vulnerabilities in boxes like default credentials and weak SSO. A good ways into the competition, an inject suggested that new OSINT information may be discoverable. In a matter of minutes, Nathan identified a public Google Drive folder with recordings of Zoom meetings that leaked confidential information. One of the recordings mentioned that ScadaBR was running on the environment. I quickly located it on the .50 box, used default passwords to eventually get remote code execution via a CVE as root. Over the next several hours, we continued to occasionally find a new vulnerability every now and then, but we were really struggling to find more to report. Of note, [Dylan](https://dtsec.us/) was able to get remote code execution as the user *postgres*, but we weren't able to escalate to root. By the time access to the environment closed, we had only 8 findings.
 
@@ -70,7 +70,7 @@ Another thorn in our side was MPD and NetJukebox. While we tried several attack 
 ## The Reassessment
 The reassessment this year was largely similar to the regional environment. There were a handful of key differences, but CPTC organizers admitted that some of those differences were entirely accidental (deployment errors). Below is an image of the environment from LockBoxx, who posts [great insights into the CPTC organizers side of things](http://lockboxx.blogspot.com/2022/01/cptc-2021-finals-review.html).  
 
-![Image](/assets/images/lbc_network.png)
+![Image](/assets/images/blog/lbc_network.png)
 
 One change to the environment that was significant during the first day of competition was the removal of the .50 and .51 boxes. Our jVision scans showed us similar results as the previous round, so we just got to work on hunting for vulnerabilties on the familiar machines. During the first hour we reassessed all the vulnerabilities we previously found. Although a few still worked, most were patched. We did notice some small differences in the repeat vulnerabitilies like more data was inside the databases this time around, but the bottom line was that if the vulnerability was from Regionals, it was exploited in the same exact way. If you couldn't do it the same way, it was patched.
 
