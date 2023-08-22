@@ -29,7 +29,7 @@ header: true
 certifications:
   - name: Associate of (ISC)<sup>2</sup>
     link: https://www.credly.com/badges/8c627b72-4fd4-4e54-8242-f85e18221b51
-  - name: CompTIA A+
+  - name: CompTIA A+ (expired)
     link: https://www.credly.com/badges/4567b856-8184-489c-a64e-00f79a5fa502
 competitions:
   - award: 2nd Place
