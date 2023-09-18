@@ -96,8 +96,8 @@ competitions:
 
     <p>
       Code monkey and *nix nerd for various security competitions I've participated in. Former captain of the CCDC team and former co-captain of the CPTC
-      team. Formally served as the Vice President of Operations at
-      <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>. Just happy to spread my knowledge and experience to the anyone interested.
+      team. Formerly served as the Vice President of Operations at
+      <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>. Made way too many websites/webapps Just happy to spread my knowledge and experience to the anyone interested.
     </p>
   </div>
 
