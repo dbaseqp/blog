@@ -29,8 +29,9 @@ header: true
 certifications:
   - name: Associate of (ISC)<sup>2</sup>
     link: https://www.credly.com/badges/8c627b72-4fd4-4e54-8242-f85e18221b51
-  - name: CompTIA A+ (expired)
+  - name: CompTIA A+
     link: https://www.credly.com/badges/4567b856-8184-489c-a64e-00f79a5fa502
+    expire: true
 competitions:
   - award: 2nd Place
     name: CCDC National Finals
@@ -111,10 +112,21 @@ competitions:
         <li>
         <div class="cert">
           {%- if _certification.link -%}
-            <a href="{{ _certification.link }}" target="_blank">{{_certification.name}}</a>
-          {%- else -%}
-            <p>{{_certification.name }}</p>
+            <a href="{{ _certification.link }}" target="_blank">
           {%- endif -%}
+          {%- if _certification.expire -%}
+          <s>
+          {%- endif -%}
+            {{_certification.name }}
+          {%- if _certification.expire -%}
+          </s>
+          {%- endif -%}
+          {%- if _certification.link -%}
+          </a>
+          {%- endif -%}
+
+          {%- if _certification.expire -%}(Expired){%- endif -%}
+
           {%- if _certification.src -%}
             <img class="image image--md" src="{{_certification.src }}">
           {%- endif -%}

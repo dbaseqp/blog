@@ -18,7 +18,7 @@ highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "t
 url: "https://gabrielfok.us"
 baseurl: /
 title: "gabriel fok"
-description: >
+description: 
 
 ## => Language and Timezone
 ##############################
@@ -29,8 +29,8 @@ timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for
 ##############################
 author:
   name: Gabriel Fok
+  alias: baseq
   avatar: assets/images/logo.png
-  job: ""
   bio: "Technology, Cybersecurity, and Competition"
   email: gabriel@gabrielfok.us
   twitter: baseq_twt

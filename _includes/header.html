@@ -12,9 +12,10 @@
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
           {%- if site.title -%}
-            <a class="home--button" title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">
-              {%- include svg/logo.svg -%}<span></span>{{ site.title }}
+            <a class="home--button" title="Home{%- if site.description -%} - {{ site.description }}{%- endif -%}" href="{{ __return }}">
+              {%- include svg/logo.svg -%}<span></span>
             </a>
+            {{ site.author.alias }}//{{ site.title }}
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}
