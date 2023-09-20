@@ -24,4 +24,10 @@
 {%- include head/custom.html -%}
 {%- if page.article_header.image -%}
 <meta property="og:image:secure_url" content="{{ site.url}}{{ page.article_header.image.src }}"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.author.twitter }}">
+<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+<meta property="twitter:title" content="{{ page.title }}"/>
+<meta property="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}"/>
+<meta name="twitter:image" content="{{ site.url}}{{ page.article_header.image.src }}"/>
 {%- endif -%}
