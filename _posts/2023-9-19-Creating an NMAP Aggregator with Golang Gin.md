@@ -7,6 +7,10 @@ tags: [cptc, pentesting, development, tutorial]
 aside:
   toc: true
 mermaid: true
+article_header:
+  type: cover
+  image:
+    src: /assets/images/blog/sugmanats-cover.png
 ---
 # Introduction
 
