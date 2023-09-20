@@ -67,7 +67,7 @@ In 2019, nVis was born. It was the first attempt at solve the issue of running N
 When I joined the CPTC team in 2021, my former CCDC teammate, [jbrick](https://github.com/neberhardt123), also joined. At this point, the creators of nVis had graduated, so jbrick took it upon himself to pick up the project. Unfortunately, the codebase wasn't too great so he decided to remake it in his preferred languages/frameworks (Python w/Django). Thus, jVis was born. He continued the idea of having client scripts run and callback to a central server. Halfway through the LeBonbon Croissant season, jbrick called it quits with Django and swapped to Blazor (a C# web framework) to create a more matured jVision. 
 
 ### AM-UNGOS
-When jbrick graduated at the end of the 2021-2022 season, I took up the mantle of NMAP aggregator. While jVision had some nice features, it was ultimately both slow (.NET isn't great) and difficult to maintain. So, I decided to also start from scratch, but this time using a super portable language that I had just looked into (Golang). While I was a complete novice, I was able to stich together AM-UNGOS from enough tutorials while totally paying attention in my California history class. I ditched the client NMAP scanners in favor of letting users run their normal NMAP scans (e.g. `nmap -sSVC`) and upload it through the web user interface. There was nearly 0 JS to keep things simple. Deployment was super simple, and using AM-UNGOS was very intuitive without needing to know how it worked.
+When jbrick graduated at the end of the 2021-2022 season, I took up the mantle of NMAP aggregator. While jVision had some nice features, it was ultimately both slow (.NET isn't great), difficult to maintain, and crashed during the previous year's global finals, making it unviable. I decided to also start from scratch, but this time using a super portable language that I had just looked into (Golang). While I was a complete novice, I was able to stich together AM-UNGOS from enough tutorials while totally paying attention in my California history class. I ditched the client NMAP scanners in favor of letting users run their normal NMAP scans (e.g. `nmap -sSVC`) and upload it through the web user interface. There was nearly 0 JS to keep things simple. Deployment was super simple, and using AM-UNGOS was very intuitive without needing to know how it worked.
 
 At the end of globals, we received ***__extensive__*** technical feedback that really went into ***__extreme__*** detail. It was ***__so__*** long that you may have to zoom in. I've attached our entire feedback below.
 
@@ -197,11 +197,20 @@ The Boxes view is where the real magic happens. The button on the left side open
 ## Export Boxes
 The Export Boxes view is a static view of the page. It's main use is to have a view where all content is visible.
 
+![Image](/assets/images/blog/sugmanats-exportboxes.png)
+> SUGMANATS boxes
+
 ## Credentials
 The Credentials view allows users to store known username/password combinations with an associated note. 
 
+![Image](/assets/images/blog/sugmanats-credentials.png)
+> SUGMANATS export boxes
+
 ## Tasks
 The Tasks view allows users to create and assign tasks. Notes support Markdown. 
+
+![Image](/assets/images/blog/sugmanats-tasks.png)
+> SUGMANATS tasks
 
 ## Misc
 The last few pages are very simple
