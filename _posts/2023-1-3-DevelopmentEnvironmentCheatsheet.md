@@ -23,6 +23,19 @@ Install `curl` and run the following oneliner.
 curl -L https://git.io/vQhTU | bash
 ```
 
+# Convert Python2 to Python3
+
+1. Address tabs vs space issues
+  - In vim,
+```
+:set tabstop=8    # or 4 depending on file
+:set expandtab
+:retab
+```
+
+2. Go to [https://python2to3.com/](https://python2to3.com/)
+3. Repeat step 1 until works
+
 # Configure Copy/Paste for ESXi VMs
 
 1. Shutdown VM
