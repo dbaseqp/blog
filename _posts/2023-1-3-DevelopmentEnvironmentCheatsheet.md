@@ -23,6 +23,18 @@ Install `curl` and run the following oneliner.
 curl -L https://git.io/vQhTU | bash
 ```
 
+# Generate Pubkey Pair via OpenSSL
+
+1. Generate private key
+```bash
+openssl genrsa -out private_key.pem 2048
+```
+
+2. Generate public key
+```bash
+openssl rsa -in private_key.pem -pubout -out public_key.pem
+```
+
 # Convert Python2 to Python3
 
 1. Address tabs vs space issues
