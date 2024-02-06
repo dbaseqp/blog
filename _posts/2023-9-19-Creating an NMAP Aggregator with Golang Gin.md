@@ -71,7 +71,7 @@ In 2019, nVis was born. It was the first attempt at solve the issue of running N
 When I joined the CPTC team in 2021, my former CCDC teammate, [jbrick](https://github.com/neberhardt123), also joined. At this point, the creators of nVis had graduated, so jbrick took it upon himself to pick up the project. Unfortunately, the codebase wasn't too great so he decided to remake it in his preferred languages/frameworks (Python w/Django). Thus, jVis was born. He continued the idea of having client scripts run and callback to a central server. Halfway through the LeBonbon Croissant season, jbrick called it quits with Django and swapped to Blazor (a C# web framework) to create a more matured jVision. 
 
 ### AM-UNGOS
-When jbrick graduated at the end of the 2021-2022 season, I took up the mantle of NMAP aggregator. While jVision had some nice features, it was ultimately both slow (.NET isn't great), difficult to maintain, and crashed during the previous year's global finals, making it unviable. I decided to also start from scratch, but this time using a super portable language that I had just looked into (Golang). While I was a complete novice, I was able to stich together AM-UNGOS from enough tutorials while totally paying attention in my California history class. I ditched the client NMAP scanners in favor of letting users run their normal NMAP scans (e.g. `nmap -sSVC`) and upload it through the web user interface. There was nearly 0 JS to keep things simple. Deployment was super simple, and using AM-UNGOS was very intuitive without needing to know how it worked.
+When jbrick graduated at the end of the 2021-2022 season, I took up the mantle of NMAP aggregator. While jVision had some nice features, it was ultimately both slow (.NET isn't great), difficult to maintain, and crashed during the previous year's global finals, making it unviable. I decided to also start from scratch, but this time using a super portable language that I had just looked into (Golang). While I was a complete novice, I was able to stich together AM-UNGOS from enough tutorials while totally paying attention in my California history class. I ditched the client NMAP scanners in favor of letting users run their normal NMAP scans (e.g. `nmap -sSVC`) and upload it through the web user interface or via a generic API endpoint with `curl`. There was nearly 0 JS to keep things simple. Deployment was super simple, and using AM-UNGOS was very intuitive without needing to know how it worked.
 
 At the end of globals, we received ***__extensive__*** technical feedback that really went into ***__extreme__*** detail. It was ***__so__*** long that you may have to zoom in. I've attached our entire feedback below.
 
@@ -89,7 +89,7 @@ When I decided to start working on SUGMANATS, I was asked by my team why didn't 
 
 The codebase was frankly terrible to work with. Now that I've had a year to work with and learn Golang with Gin, I was much more confident in making an extensible project for myself and for anyone who wants to continue it. With that in mind, SUGMANATS's purpose is mainly just to write a cleaner version of AM-UNGOS, so there aren't any substantial new features.
 
-This time, instead of taking months of development, I finished SUGMANATS in about a week. It uses Gin to serve both an API and a frontend using Golang HTML Templates. In true Bootstrap 5 fashion, I avoided using jQuery and opted for using vanilla JS features such as the Fetch API for AJAX and selectors like `document.getElementById` for getting elements. Also dark theme 😊.
+This time, instead of taking months of development, I finished SUGMANATS in about a week. I removed some features that didn't see much use, like the API endpoint for sending scan data via `curl`. SUGMANATS uses Gin to serve both an API and a frontend using Golang HTML Templates. In true Bootstrap 5 fashion, I avoided using jQuery and opted for using vanilla JS features such as the Fetch API for AJAX and selectors like `document.getElementById` for getting elements. Also dark theme 😊.
 
 # Design Process
 ## Project Structure and Configuration
@@ -193,13 +193,13 @@ I considered adding more information here, but I couldn't identify any other met
 > SUGMANATS dashboard. There is a special surprise if you get a shell on every box. 
 
 ## Boxes
-The Boxes view is where the real magic happens. The button on the left side opens up the menu which shows the filter menu, upload menu, and Box list. When you open a Box from the Box list, it'll create a tab in the center pane. This allows users to focus more on the boxes they are currently working on. Tabs can be closed as necessary, but currently don't support rearrangement. The state is saved in the URL, which means they can be reloaded or even shared. The right-most tab is the one that will be opened by default. The notes of each box are have Markdown rendering, but it's rendered as part of the initial HTML response, so changes to notes require a refresh to view. 
+The Boxes view is where the real magic happens. The button on the left side opens up the menu which shows the filter menu, upload menu, and Box list. When you open a Box from the Box list, it'll create a tab in the center pane. This allows users to focus more on the boxes they are currently working on. Tabs can be closed as necessary, but currently don't support rearrangement. The state is saved in the URL, which means they can be reloaded or even shared. The right-most tab is the one that will be opened by default. The notes of each box have Markdown rendering, but it's rendered as part of the initial HTML response, so changes to notes require a refresh to view. 
 
 ![Image](/assets/images/blog/sugmanats-boxes.png)
 > SUGMANATS boxes
 
 ## Export Boxes
-The Export Boxes view is a static view of the page. It's main use is to have a view where all content is visible.
+The Export Boxes view is a static view of the page. It's main use is to have a view where all content is visible without having to open every box in a tab, as is with the default view.
 
 ![Image](/assets/images/blog/sugmanats-exportboxes.png)
 > SUGMANATS boxes
