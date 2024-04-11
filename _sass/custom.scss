@@ -72,7 +72,8 @@
 }
 
 /* end custom scss snippet */
-.item__content>header, .homepage__links {
+.item__content>header,
+.homepage__links {
     a:link {
         text-decoration: none !important;
     }
@@ -171,10 +172,12 @@
                 font-size: map-get($base, font-size-h1-sm);
             }
         }
+
         @include media-breakpoint-down(md) {
             height: 210px;
             width: 90vw;
         }
+
         // .title:hover {
         //     background-position: right;
         // }
@@ -184,10 +187,10 @@
 }
 
 .details {
-    background-color: #000000; 
-    color: #FFFFFF; 
-    border-left: 5px solid $main-color-1; 
-    border-radius: 10px; 
+    background-color: #000000;
+    color: #FFFFFF;
+    border-left: 5px solid $main-color-1;
+    border-radius: 10px;
     padding: 10px;
 
     summary {
@@ -198,4 +201,10 @@
 .header .navigation__item a {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.page__header {
+    -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.5);
 }
