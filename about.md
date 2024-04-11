@@ -89,14 +89,14 @@ competitions:
     year: 2018-2019
 ---
 <div id=about>
-  <h3 ><i>Computer Science Undergraduate Student at Cal Poly Pomona. </i></h3>
+  <h3 ><i>Systems Engineer @ Boeing. </i></h3>
   <div>
     <p>
       Some people know me as baseq. I'm a person with many interests&#8212;security, esports, and music to name a few.
     </p>
 
     <p>
-      Code monkey and *nix nerd for various security competitions I've participated in. Former captain of the CCDC team and former co-captain of the CPTC
+      Code monkey and *nix nerd for various security competitions I've participated in. Former member of <a href="https://cysec.team/" target="_blank">CPP Cyber</a> as captain of the CCDC team and co-captain of the CPTC
       team. Formerly served as the Vice President of Operations at
       <a href="https://www.calpolyswift.org/" target="_blank">Students With an Interest in the Future of Technology</a>. Now Operations at <a href="https://wrccdc.org" target="_blank">WRCCDC</a>. Learner by doing.
       Made way too many websites/webapps. Happy to spread my knowledge and experience to the anyone interested.
