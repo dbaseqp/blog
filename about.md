@@ -89,7 +89,7 @@ competitions:
     year: 2018-2019
 ---
 <div id=about>
-  <h3 ><i>Systems Engineer @ Boeing. </i></h3>
+  <h3 ><i>Detection Engineer @ Upstart. </i></h3>
   <div>
     <p>
       Some people know me as baseq. I'm a person with many interests&#8212;security, esports, and music to name a few.
