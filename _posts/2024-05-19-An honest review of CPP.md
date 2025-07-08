@@ -56,9 +56,8 @@ At the end of the day, it is up to you with what you value the most. I've had fr
 
 <details class="details">
   <summary>More on extracurriculars vs quality courses</summary>
-  <p>It is also important to consider the fact that ultimately the personal projects/extracurriculars would be compensation for the lack of better education. Transparently, I don't think most people take advantage of the time they have to truly warrant picking a major to make more time. However, I have also met people that truly are not scholars and want to do the bare minimum to get the piece of paper. If the very concept of going to class drains you, then I guess course quality doesn't apply to you. That being said, most impressive projects can be built while doing more than what CIS and CS would require.</p>
+  <p>Especially in tech, the industry moves too fast for universities to be up to date, so focusing your time on extracurriculars enables you to learn more in-demand skills. Transparently, though, I don't think most people take advantage of the time they have to truly warrant picking a major to make more time. The benefits of quality courses is that they provide an ecosystem to learn more abstract background concepts of topics that will influence the way you think more than what you know. However, I have also met people that truly are not scholars and want to do the bare minimum to get the piece of paper. If the very concept of going to class drains you, then I guess course quality doesn't apply to you. That being said, most impressive projects can be built while doing more than what CIS and CS would require. So while personal projects/extracurriculars could be compensation for the lack of better education, the goal in my eyes is to get the best of both. </p>
 </details>
-
 
 ## Cost
 
