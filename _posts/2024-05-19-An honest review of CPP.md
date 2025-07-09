@@ -76,7 +76,7 @@ Most people commute to CPP, so there can be difficulties with identifying commun
 
 In the case of CS and cybersecurity, there are some decent clubs like [CSS](https://cppcss.club/) for CS and [SWIFT](https://www.calpolyswift.org/) for cybersecurity. Personally, I never joined any of the CS clubs because I was focused entirely on SWIFT, so I can't say if others were any good or not, but they do host hackathons a few times a year.
 
-There are frats and such that I have mixed reviews about depending on what you're looking for (study buddys, meet friends, volunteer opportunities).
+There are frats and such on campus that I have heard mixed reviews about depending on what you're looking for (study buddys, meet friends, volunteer opportunities). From speaking to people, I largely got the impression that if you risk losing focus and momentum, reconsider your level of participation. I can't speak much more on them because I don't want to misrepresent something I know little about. 
 
 ### Housing
 
@@ -92,11 +92,11 @@ All of them are wicked overpriced. I'd recommend getting out ASAP.
 
 There are 3 different primary food courts on campus. 
 
-1. Bronco Student Center (BSC): Chain restaurant locations, it's what you expect
-2. The Marketplace: Chain restaurant locations, it's what you expect
+1. Bronco Student Center (BSC): Chain restaurant locations (Roundtable, Subway, Hibachi-san), it's what you expect
+2. The Marketplace: Chain restaurant locations (Panda Express, Carl's Jr, QDOBA), it's what you expect
 3. Centerpointe: I've never been, but have only heard horror stories
 
-There are also a few cafes/marts on campus where you can get quick bites to eat that genuinely aren't bad. 
+There are also a few cafes/marts (Brewworks, FitBites, Element Cafe) on campus where you can get quick bites to eat that genuinely aren't bad. 
 
 ## Courses
 
@@ -157,6 +157,8 @@ Parking is really bad at CPP because of all the commuters. Be prepared to go to 
 ## Gym
 
 The gym at CPP is called the BRIC. While I only used it sparingly, it was pretty good and features a rock climbing wall. It does get very, very busy at times, so you'd have to find a convenient time in your schedule. I would go between my team practices on Saturdays, or after my night classes and usually it had minimal if any wait times for machines/weights. 
+
+Thought, I haven't used it, my friend said the 25y, dozen-lane pool is usually fairly empty so usually available.
 
 # Conclusion
 
